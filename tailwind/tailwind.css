@@ -1,4 +1,4 @@
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -21,7 +21,16 @@
 }
 
 @layer utilities {
-  .utilityshadow {
+  .utilityshadowbox {
     box-shadow: 10px 10px 35px blue;
+  }
+  .utilityshadowtext {
+    text-shadow: 5px 5px 5px green;
+  }
+}
+@layer base {
+  h2 {
+    color: pink !important;
+    font-size: 40px !important;
   }
 }
