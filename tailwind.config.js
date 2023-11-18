@@ -10,7 +10,7 @@ module.exports = {
         leftmojde: "50%",
       },
       inset: {
-        insetmojde:"calc(50% - 400px / 2)"
+        insetmojde: "calc(50% - 400px / 2)",
       },
     },
   },

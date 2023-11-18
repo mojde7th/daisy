@@ -6,46 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body class="p-0 m-0">
-    <div
-        class="w-1/2 h-auto p-[50px] bg-indigo-500 mx-auto hover:bg-lime-400 mt-3 shadow-[0_850px_300px_700px_black] hover:shadow-[0_35px_65px_15px_grey] cursor-pointer transition-all duration-[1s]  ease-linear">
 
-        <h1 class="text-white hover:text-purple-700">Hello-World</h1>
-        <p class="leading-7 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius corrupti nam
-            odio, assumenda dolores
-            accusantium quaerat, temporibus quasi eaque aliquam enim eveniet ipsum fuga. Ex explicabo similique
-            officiis! Odio, iure.</p>
-        <a href="#"
-            class="text-white hover:text-orange-500 w-[250px] bg-slate-500 block h-[40px] leading-[40px] text-center no-underline capitalize">read-more</a>
+    <div class="product">
+        <h1 class="myH1">Hello-World</h1>
+        <img src="././images/mac.jpg" class="w-full" alt="">
+        <p class="pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
+            laudantium ipsa
+            odio
+            ad, minima distinctio doloribus reiciendis asperiores in delectus provident eos iure id culpa corrupti est
+            adipisci libero.</p>
     </div>
-    <div
-        class="w-1/2 h-auto p-[50px] group bg-indigo-500 mx-auto  mt-3 shadow-[0_850px_300px_700px_black] hover:shadow-[0_35px_65px_15px_grey] cursor-pointer transition-all duration-[1s]  ease-linear">
 
-        <h1 class="text-white transition-all group-hover:bg-emerald-500 duration-300 hover:text-purple-700">Hello-World
-        </h1>
-        <p class="leading-7 text-white group-hover:bg-[#2b2b2b] transition-all duration-[1s] group/p">Lorem ipsum
-            dolor
-            sit amet
-            consectetur, adipisicing elit. Eius corrupti nam
-            odio, assumenda dolores <span class="bg-lime-500 text-[#2b2b2b]  group-hover/p:bg-orange-700">Lorem ipsum
-                doicabo quibusdam ullam, dolore
-                cupiditate!</span>
-            accusantium quaerat, temporibus quasi eaque aliquam enim eveniet ipsum fuga. Ex explicabo similique
-            officiis! Odio, iure.</p>
-        <a href="#"
-            class="text-white group-hover:text-black  hover:text-orange-500 w-[250px] bg-slate-500 block h-[40px] leading-[40px] text-center no-underline capitalize active:bg-lime-600  ">read-more</a>
-        <input href="#"
-            class="text-white group-hover:text-black  hover:text-orange-500 w-[250px] bg-slate-500 block h-[40px] leading-[40px] text-center no-underline capitalize   focus:ring-inset focus:bg-orange-700 active:bg-[green] ">
+    <div class="cardd">
     </div>
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <strong>Tailwind</strong> <br> 
+&lt;div class="product"&gt; <br>
+&lt;h1 class="myH1"&gt; <br>Hello-World&lt;/h1&gt; <br>
+&lt;img src="././images/mac.jpg" class="w-full" alt=""&gt; <br>
+&lt;p class="pp"&gt; <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
+laudantium ipsa
+odio
+ad, minima distinctio doloribus reiciendis asperiores in delectus provident eos iure id culpa corrupti est
+adipisci libero.&lt;/p&gt; <br>
+&lt;/div&gt; <br>
+
+&lt;div class="cardd"&gt; <br>
+&lt;/div&gt; <br>
+
+    </div>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+        <strong>My Tailwind.css Content</strong> <br>/* @tailwind base;<br> */
+        @tailwind components;<br>
+        @tailwind utilities;<br>
+        
+        @layer components {<br>
+        .cardd {<br>
+        @apply 2xl:w-[50%] 2xl:h-[100px] 2xl:bg-lime-900 bg-pink-500 w-[40%] h-[90px] md:bg-amber-700 md:w-[50%] md:h-[50px]
+        sm:bg-amber-800
+        sm:w-[40%] sm:h-[85px]
+        mx-auto;<br>
+        }<br>
+        .product {<br>
+        @apply w-[300px] p-[30px] bg-emerald-600 mx-auto;<br>
+        }<br>
+        .myH1 {<br>
+        @apply text-center;<br>
+        }<br>
+        .pp {
+        @apply leading-[25px] text-justify;<br>
+        }<br>
+        }<br>
+    </div>
+    
     <script>
-        setInterval(
-            function () {
-                //  console.log("Hello")
-            }
-            , 1000); 
+      var alertList = document.querySelectorAll('.alert');
+      alertList.forEach(function (alert) {
+        new bootstrap.Alert(alert)
+      })
     </script>
+    
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

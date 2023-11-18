@@ -1,3 +1,21 @@
 /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .cardd {
+    @apply 2xl:w-[50%] 2xl:h-[100px] 2xl:bg-lime-900  bg-pink-500 w-[40%] h-[90px] md:bg-amber-700 md:w-[50%] md:h-[50px]
+        sm:bg-amber-800 
+        sm:w-[40%] sm:h-[85px] 
+        mx-auto;
+  }
+  .product {
+    @apply w-[300px] p-[30px] bg-emerald-600 mx-auto;
+  }
+  .myH1 {
+    @apply text-center;
+  }
+  .pp {
+    @apply leading-[25px] text-justify;
+  }
+}
