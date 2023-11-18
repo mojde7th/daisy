@@ -19,3 +19,9 @@
     @apply leading-[25px] text-justify;
   }
 }
+
+@layer utilities {
+  .utilityshadow {
+    box-shadow: 10px 10px 35px blue;
+  }
+}

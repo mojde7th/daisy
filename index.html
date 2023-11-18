@@ -11,7 +11,7 @@
 
 <body class="p-0 m-0">
 
-    <div class="product">
+    <div class="product utilityshadow">
         <h1 class="myH1">Hello-World</h1>
         <img src="././images/mac.jpg" class="w-full" alt="">
         <p class="pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
@@ -26,7 +26,7 @@
     <div class="alert alert-primary alert-dismissible fade show" role="alert">
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       <strong>Tailwind</strong> <br> 
-&lt;div class="product"&gt; <br>
+&lt;div class="product utilityshadow"&gt; <br>
 &lt;h1 class="myH1"&gt; <br>Hello-World&lt;/h1&gt; <br>
 &lt;img src="././images/mac.jpg" class="w-full" alt=""&gt; <br>
 &lt;p class="pp"&gt; <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
@@ -64,6 +64,10 @@ adipisci libero.&lt;/p&gt; <br>
         @apply leading-[25px] text-justify;<br>
         }<br>
         }<br>
+    @layer utilities { <br>
+    .utilityshadow {<br>
+    box-shadow: 10px 10px 35px blue;<br>
+    }<br>
     </div>
     
     <script>
