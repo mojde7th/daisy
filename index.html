@@ -7,94 +7,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 </head>
 
 <body class="p-0 m-0">
+    <i class="bi bi-brightness-high-fill text-[50px] block text-center cursor-pointer"></i>
 
-    <div class="product  utilityshadowbox">
-        <h1 class="myH1 ">Hello-World</h1>
-        <img src="././images/mac.jpg" class="w-full" alt="">
-        <p class="pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
-            laudantium ipsa
-            odio
-            ad, minima distinctio doloribus reiciendis asperiores in delectus provident eos iure id culpa corrupti est
-            adipisci libero.</p>
+    <div
+        class="w-[40%] p-[40px] box-border bg-[lightgrey] mx-auto mt-3 shadow-[0_35px_65px_25px_lightgrey] dark:bg-[#2b2b2b]">
+        <h1 class="text-[40px] font-bold dark:text-white">Hello-World</h1>
+        <p class="text-[14px] text-justify dark:text-[whitesmoke] "><span>Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Aspernatur
+                modi iure nostrum ex. Sapiente
+                doloremque incidunt velit, corrupti debitis dolorum rem perferendis deserunt natus tempore, veniam nihil
+                temporibus eos quibusdam!</span><span>Eius tenetur nulla ut doloremque reprehenderit sint provident
+                voluptas perferendis impedit. Quos consequuntur laboriosam doloribus facere ipsam, ut assumenda id
+                laudantium eaque ipsum aliquam non. Tempore adipisci tempora magni delectus.</span><span>Molestiae,
+                itaque inventore rem facere, commodi nihil doloribus harum minima, qui autem iure rerum sapiente modi
+                repellendus architecto maiores asperiores ipsa vero! Tempore cupiditate repellendus fuga asperiores cum?
+                Asperiores, natus.</span></p>
     </div>
-    <h1 class="utilityshadowtext">hiii</h1>
-    <h2>Pink Base @layer</h2>
-    <div class="cardd">
-    </div>
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <strong>Tailwind</strong> <br>
-        &lt;div class="product utilityshadow"&gt; <br>
-        &lt;h1 class="myH1"&gt; <br>Hello-World&lt;/h1&gt; <br>
-        &lt;img src="././images/mac.jpg" class="w-full" alt=""&gt; <br>
-        &lt;p class="pp"&gt; <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
-        laudantium ipsa
-        odio
-        ad, minima distinctio doloribus reiciendis asperiores in delectus provident eos iure id culpa corrupti est
-        adipisci libero.&lt;/p&gt; <br>
-        &lt;/div&gt; <br>
-        &lt;h1 class="utilityshadowtext"&gt;hiii&lt;/h1&gt; <br>
-
-        &lt;h2&gt;Pink Base @layer&lt;/h2&gt; <br>
-
-        &lt;div class="cardd"&gt; <br>
-        &lt;/div&gt; <br>
-
-    </div>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-
-        <strong>My Tailwind.css Content</strong> <br>/* @tailwind base;<br> */
-        @tailwind components;<br>
-        @tailwind utilities;<br>
-
-        @layer components {<br>
-        .cardd {<br>
-        @apply 2xl:w-[50%] 2xl:h-[100px] 2xl:bg-lime-900 bg-pink-500 w-[40%] h-[90px] md:bg-amber-700 md:w-[50%]
-        md:h-[50px]
-        sm:bg-amber-800
-        sm:w-[40%] sm:h-[85px]
-        mx-auto;<br>
-        }<br>
-        .product {<br>
-        @apply w-[300px] p-[30px] bg-emerald-600 mx-auto;<br>
-        }<br>
-        .myH1 {<br>
-        @apply text-center;<br>
-        }<br>
-        .pp {
-        @apply leading-[25px] text-justify;<br>
-        }<br>
-        }<br>
-        @layer utilities {<br>
-        .utilityshadowbox {<br>
-        box-shadow: 10px 10px 35px blue;<br>
-        }br
-        .utilityshadowtext {<br>
-        text-shadow: 5px 5px 5px green;<br>
-        } <br>
-        } <br>
-        @layer base {<br>
-        h2 {<br>
-        color: pink !important;<br>
-        font-size: 40px !important;<br>
-        }<br>
-        }<br>
-    </div>
-
     <script>
-        var alertList = document.querySelectorAll('.alert');
-        alertList.forEach(function (alert) {
-            new bootstrap.Alert(alert)
+        var sun = document.querySelector('i');
+
+        sun.addEventListener('click', function () {
+            if (sun.classList.contains('bi-brightness-high-fill')) {
+                sun.classList.add('bi-moon-fill');
+                sun.classList.remove('bi-brightness-high-fill');
+                console.log("Tomoon");
+            }
+            else if (sun.classList.contains('bi-moon-fill')) {
+                sun.classList.add('bi-brightness-high-fill');
+                sun.classList.remove('bi-moon-fill');
+                console.log("toSun");
+            }
+
+
         })
+
     </script>
-
-
-
-    <script src="./bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
