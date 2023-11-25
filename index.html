@@ -1,68 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" class="p-0 m-0">
+<html lang="en" class="p-0 m-0" data-theme="halloween">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap-icons.css">
+
+
 </head>
 
-<body class="p-0 m-0">
-    <div class="row col p-0 m-0">
-        <i class="bi bi-brightness-high-fill text-[50px] block text-center cursor-pointer"></i>
+<body class="p-0 m-0" data-theme="halloween">
+
+    <p class="p-4 text-justify w-[70%] mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+        maiores
+        sequi illo
+        ducimus autem
+        eveniet et, alias accusantium reiciendis impedit deserunt totam dolores cum excepturi, nam asperiores sed, eaque
+        doloribus.</p><button class="btn  btn-warning mt-[-3%] capitalize ms-[20%]">
+        read-more
+    </button>
+    <label for="my_modal_7" class="btn btn-accent">open modal</label>
+    <div class="w-[50%] mx-auto text-center p-3" data-theme="halloween"> <button class="btn btn-info">Info</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+
+        <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            Button
+        </button>
     </div>
-    <div
-        class="w-[70%] p-[40px] box-border bg-[lightgrey] mx-auto mt-3 shadow-[0_35px_65px_25px_lightgrey] dark:bg-[#2b2b2b]">
-        <h1 class="text-[40px] font-bold dark:text-white">Hello-World</h1>
-        <p class="text-[14px] text-justify dark:text-[whitesmoke] "><span>Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Aspernatur
-                modi iure nostrum ex. Sapiente
-                doloremque incidunt velit, corrupti debitis dolorum rem perferendis deserunt natus tempore, veniam nihil
-                temporibus eos quibusdam!</span><span>Eius tenetur nulla ut doloremque reprehenderit sint provident
-                voluptas perferendis impedit. Quos consequuntur laboriosam doloribus facere ipsam, ut assumenda id
-                laudantium eaque ipsum aliquam non. Tempore adipisci tempora magni delectus.</span><span>Molestiae,
-                itaque inventore rem facere, commodi nihil doloribus harum minima, qui autem iure rerum sapiente modi
-                repellendus architecto maiores asperiores ipsa vero! Tempore cupiditate repellendus fuga asperiores cum?
-                Asperiores, natus.</span></p>
+    <input type="checkbox" id="my_modal_7" class="modal-toggle " />
+    <div class="modal" role="dialog">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold text-white">Hello!</h3>
+            <p class="py-4 text-white">This modal works with a hidden checkbox!</p>
+        </div>
+        <label class="modal-backdrop" for="my_modal_7">Close</label>
     </div>
-    <div class="w-[90%] alert alert-success alert-dismissible fade show mt-5  m-0 box-border mx-auto p-3 mb-3 text-[24px]"
-        role="alert">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <strong>javascript</strong><br> &lt;script&gt;<br>
-        var flag = true;<br>
-        var sun = document.querySelector('i.bi.bi-brightness-high-fill');<br> console.log(sun);<br>
-        sun.addEventListener("click", function (e) {
-        console.log(e);<br>
-        if (flag == true) { this.className = "bi bi-moon-fill text-[50px] block text-center cursor-pointer";<br> flag =
-        false;<br> } else { this.className = "bi bi-brightness-high-fill text-[50px] block text-center
-        cursor-pointer";<br> flag
-        = true;<br> }
-        console.log(document.firstElementChild);<br>
-        document.firstElementChild.classList.toggle("dark");<br>
-        })
-
-
-        &lt;<br>/script&gt;<br>
-
+    <div class="card w-96 bg-base-100 shadow-xl mx-auto mt-5">
+        <figure><img src="/images/shoe.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
     </div>
-
-
-    <script>
-        var flag = true;
-        var sun = document.querySelector('i.bi.bi-brightness-high-fill'); console.log(sun);
-        sun.addEventListener("click", function (e) {
-            console.log(e);
-            if (flag == true) { this.className = "bi bi-moon-fill text-[50px] block text-center cursor-pointer"; flag = false; } else { this.className = "bi bi-brightness-high-fill text-[50px] block text-center cursor-pointer"; flag = true; }
-            console.log(document.firstElementChild);
-            document.firstElementChild.classList.toggle("dark");
-        })
-
-
-    </script>
-    <script src="./bootstrap.bundle.min.js"></script>
+    <div class="card card-side bg-base-100 shadow-xl w-[40%] mx-auto mt-4 mb-5">
+        <figure><img src="https://daisyui.com//images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">Watch</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
